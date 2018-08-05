@@ -1,23 +1,11 @@
 import React from 'react';
-import Component from './Component'
+import Welcome from './Welcome'
+import Header from './Header'
 
-class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {}
-  }
+export default ({ children }) => {
 
-  componentWillMount(){
-
-  }
-
-  render () {
-    return (<div> 
-              <h1>MERN Starter Kit</h1>
-              This is your App!
-              <Component />
-            </div>);
-  }
-}
-
-export default App;
+  return (<div> 
+    <Header />
+    {children}
+  </div>);
+} 

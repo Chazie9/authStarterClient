@@ -9,6 +9,6 @@ app.use(express.static('./client/dist'));
 
 app.use(router);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 1112;
 
 app.listen(PORT, ()=>console.log(`Listening on PORT ${PORT}!`));
